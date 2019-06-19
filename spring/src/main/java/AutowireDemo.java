@@ -8,13 +8,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 
-public class App {
+/**
+ * Auto wire demo
+ */
+public class AutowireDemo {
     public static void main(String[] args) throws IOException {
 
 //        String contextName = "ApplicationContext.xml";
         String contextName = "properties/test.xml";
 
-        InputStream stream = new App().getClass().getClassLoader().getResourceAsStream(contextName);
+        InputStream stream = new AutowireDemo().getClass().getClassLoader().getResourceAsStream(contextName);
         File targetFile = new File("test.xml");
         FileUtils.copyInputStreamToFile(stream, targetFile);
         //Read File Content
