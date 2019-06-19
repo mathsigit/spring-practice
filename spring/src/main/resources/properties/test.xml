@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="employee" class="com.stana.spring.bean.EmployeeBean" autowire="byType">
-        <property name="fullName" value="Lokesh Gupta"/>
+        <property name="fullName" value="Stana He"/>
     </bean>
 
     <bean id="department" class="com.stana.spring.bean.DepartmentBean" >
