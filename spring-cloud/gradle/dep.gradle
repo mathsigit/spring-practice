@@ -1,0 +1,4 @@
+ext {
+    versions = [:]
+}
+versions["springcloud"] = project.hasProperty('springcloud.version') ? project.properties['springcloud.version'] : "Greenwich.SR2"

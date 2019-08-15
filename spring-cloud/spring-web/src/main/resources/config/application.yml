@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-web
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: heapdump,liquibase,loggers,prometheus,threaddump,info,metrics,health
