@@ -1,17 +1,17 @@
 spring:
   application:
-    name: client-demo
+    name: eureka-client
 
 server:
-  port: 8080
+  port: 2001
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: heapdump,liquibase,loggers,prometheus,threaddump,info,metrics,health
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: heapdump,liquibase,loggers,prometheus,threaddump,info,metrics,health

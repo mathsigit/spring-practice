@@ -5,6 +5,8 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 public class DCController {
 
@@ -12,8 +14,8 @@ public class DCController {
     DiscoveryClient discoveryClient;
 
     @GetMapping("/dc")
-    public String dc() {
-        String services = "Services: " + discoveryClient.getServices();
+    public String dc(HttpServletRequest request) {
+        String services = "Services: " + discoveryClient.getServices() + ", Url: " + request.getRequestURL().toString();
         System.out.println(services);
         return services;
     }
