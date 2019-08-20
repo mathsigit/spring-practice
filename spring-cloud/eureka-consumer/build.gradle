@@ -1,0 +1,11 @@
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	/*
+	*  According to https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes
+	* spring-cloud-starter-eureka was deprecated and replacing by spring-cloud-starter-netflix-eureka-client
+	*/
+//	implementation 'org.springframework.cloud:spring-cloud-starter-eureka'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
