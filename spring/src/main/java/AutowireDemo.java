@@ -1,4 +1,6 @@
 import com.stana.spring.bean.EmployeeBean;
+import com.stana.spring.constant.Status.*;
+import com.stana.spring.utils.PropertyUtil;
 import org.apache.commons.io.FileUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -14,9 +16,7 @@ import java.nio.file.Files;
 public class AutowireDemo {
     public static void main(String[] args) throws IOException {
 
-//        String contextName = "ApplicationContext.xml";
-        String contextName = "properties/test.xml";
-
+        String contextName = (new PropertyUtil(PropertyID.ERROR)).getContextNameByID();
         InputStream stream = new AutowireDemo().getClass().getClassLoader().getResourceAsStream(contextName);
         File targetFile = new File("test.xml");
         FileUtils.copyInputStreamToFile(stream, targetFile);

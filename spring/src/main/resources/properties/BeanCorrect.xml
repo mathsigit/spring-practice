@@ -3,11 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="employee" class="com.stana.spring.bean.EmployeeBean" autowire="byType">
-        <property name="fullName" value="Lokesh Gupta"/>
+    <bean id="employee" class="com.stana.spring.bean.EmployeeBean" autowire="byName">
+        <property name="departmentBean" ref="department"/>
+        <property name="fullName" value="Stana He"/>
     </bean>
 
-    <bean id="department" class="com.stana.spring.bean.DepartmentBean" >
+    <bean id="department" class="com.stana.spring.bean.DepartmentBean">
         <property name="name" value="Human Resource" />
     </bean>
 </beans>
