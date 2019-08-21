@@ -26,3 +26,9 @@ By changing enum `PropertyID` in `AutowireDemo.java`
 ```java
 String contextName = (new PropertyUtil(PropertyID.ERROR)).getContextNameByID();
 ```
+
+# About autowire
+
+1. If autowire set as 'byName', you should add all the property of bean.
+   * To compare `properties/BeanCorrect.xml` and `properties/BeanTest1.xml`, and switch properties to executing the application to know more detail.
+  
