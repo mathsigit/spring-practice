@@ -18,5 +18,11 @@ java -cp gs-spring-boot-0.1.0.jar
 
 ```
 cd resource/properties
-vi test.xml
+```
+
+## Switch properties 
+By changing enum `PropertyID` in `AutowireDemo.java`
+
+```java
+String contextName = (new PropertyUtil(PropertyID.ERROR)).getContextNameByID();
 ```
