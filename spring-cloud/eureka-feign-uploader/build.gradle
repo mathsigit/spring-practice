@@ -1,0 +1,20 @@
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'io.github.openfeign.form:feign-form:3.2.2'
+	implementation 'io.github.openfeign.form:feign-form-spring:3.2.2'
+//	implementation 'commons-fileupload:commons-fileupload:1.4'
+	/*
+	Since the 2.x release Spring Cloud moved the netflix feign classes to their own project.
+	https://github.com/spring-cloud/spring-cloud-openfeign
+	 */
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	/*
+	*  According to https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes
+	* spring-cloud-starter-eureka was deprecated and replacing by spring-cloud-starter-netflix-eureka-client
+	*/
+//	implementation 'org.springframework.cloud:spring-cloud-starter-eureka'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.projectlombok:lombok:1.16.20'
+}
