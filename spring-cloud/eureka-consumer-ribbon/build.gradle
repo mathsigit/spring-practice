@@ -2,6 +2,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon'
+	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	/*
 	*  According to https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes
