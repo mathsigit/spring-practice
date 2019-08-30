@@ -35,6 +35,6 @@ public class DcController {
     public String trace() {
         logger.info("===call trace-1===");
         return restTemplate.getForEntity("http://eureka-client/trace-2", String.class).getBody();
-//        return restTemplate.getForObject("http://eureka-client/trace-2", String.class);
+
     }
 }
