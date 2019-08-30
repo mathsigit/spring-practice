@@ -114,9 +114,6 @@ http://localhost:2201/trace-1
 ```
  
 Then it would show the result as below via browse the url `http://localhost:9411/zipkin/`
-
-<img src="/media/2018/08/kitten.jpg" alt="Kitten"
-	title="A cute kitten" width="150" height="100" />
  
 ![zipkin-ui](pictures/zipkin-ui.png)
 
