@@ -1,6 +1,6 @@
-#Consul on Docker Usage
+# Consul on Docker Usage
 
-##Create a consul cluster with 3 server node and 1 client node.
+## Create a consul cluster with 3 server node and 1 client node.
 
 ```shell script
 ./create_consul_cluster.sh
@@ -19,19 +19,19 @@ UI
 http://localhost:8500/ui
 ```
 
-##Check consul member
+## Check consul member
 
 ```shell script
 ./check_members.sh
 ```
 
-##Get consul cluster ip of leader.
+## Get consul cluster ip of leader.
 
 ```shell script
 ./check_leader.sh
 ```
 
-##Execute consul APIs
+## Execute consul APIs
 
 ```shell script
 ./exec_curl.sh ${APIs Path}
@@ -55,7 +55,7 @@ and you would get the same response:
 }
 ```
 
-##REF
+## REF
 
 * [Accessing consul UI running in docker on OSX](https://stackoverflow.com/questions/41228968/accessing-consul-ui-running-in-docker-on-osx)
 * [Configuration of consul](https://www.consul.io/docs/agent/options.html)
